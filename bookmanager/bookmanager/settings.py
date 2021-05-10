@@ -25,7 +25,8 @@ SECRET_KEY = 'ww3==y%wu=%fv_l$w0tgudnpgmdu%*@2oji6_&k)x)o*xw9r$_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 允许以什么样的形式来访问我们的项目，默认是 127.0.0.1  *的意思是可以使用ip，也可以使用127
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
