@@ -17,4 +17,14 @@ from django.http import HttpResponse
 
 def index(request):
 
-    return HttpResponse('OK')
+    # return HttpResponse('OK')
+    # render    渲染模板
+    # request   请求
+    # template_name   模板名字
+
+    # context=None  上下文，理解为将视图中的数据传递给HTML，HTML采用{{ 字典的key }}来展示数据
+    # 模拟数据查询
+    context = {
+        'name': '马上双11，点击有惊喜'
+    }
+    return render(request, 'book/index.html', context=context)
